@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Skills - Niyayesh Hajimohammadi</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="AboutMe.html">About Me</a>
+          </li>
+          <li><a href="SelectedProjects.html">Selected Projects</a></li>
+          <li>
+            <a href="MySkills.html"><u>My Skills</u></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container" id="skills">
+      <h1 class="section-title">My Skills</h1>
+
+      <section class="skills-section">
+        <div class="skill-category">
+          <div class="category-label">Technical Skills</div>
+          <ul class="skills-list">
+            <li>
+              <span>Python</span>
+              <div class="bar" data-level="95"></div>
+            </li>
+            <li>
+              <span>C</span>
+              <div class="bar" data-level="90"></div>
+            </li>
+            <li>
+              <span>Java</span>
+              <div class="bar" data-level="85"></div>
+            </li>
+            <li>
+              <span>Git</span>
+              <div class="bar" data-level="70"></div>
+            </li>
+            <li>
+              <span>SQL</span>
+              <div class="bar" data-level="90"></div>
+            </li>
+            <li>
+              <span>Design Patterns</span>
+              <div class="bar" data-level="85"></div>
+            </li>
+            <li>
+              <span>Data Structures</span>
+              <div class="bar" data-level="90"></div>
+            </li>
+            <li>
+              <span>Networking</span>
+              <div class="bar" data-level="70"></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-label">Soft Skills</div>
+          <ul class="skills-list">
+            <li>
+              <span>Time Management</span>
+              <div class="bar" data-level="95"></div>
+            </li>
+            <li>
+              <span>Problem-Solving</span>
+              <div class="bar" data-level="90"></div>
+            </li>
+            <li>
+              <span>Critical Thinking</span>
+              <div class="bar" data-level="60"></div>
+            </li>
+            <li>
+              <span>Attention to Detail</span>
+              <div class="bar" data-level="95"></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-label">Language Skills</div>
+          <ul class="skills-list">
+            <li>
+              <span>Listening</span>
+              <div class="bar" data-level="95"></div>
+            </li>
+            <li>
+              <span>Speaking</span>
+              <div class="bar" data-level="90"></div>
+            </li>
+            <li>
+              <span>Writing</span>
+              <div class="bar" data-level="90"></div>
+            </li>
+            <li>
+              <span>Reading</span>
+              <div class="bar" data-level="95"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>Contact Info: niyayesh.hajimohammadi2003@gmail.com</p>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".bar").forEach((bar) => {
+          const level = bar.getAttribute("data-level");
+          if (level !== null) {
+            const fill = document.createElement("div");
+            fill.classList.add("fill");
+            bar.appendChild(fill);
+
+            // Trigger width animation after a slight delay
+            requestAnimationFrame(() => {
+              fill.style.width = level + "%";
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
