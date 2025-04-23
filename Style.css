@@ -161,15 +161,14 @@
   }
   
   .about-section {
-    display: flex;
-    padding: 2rem;
-    padding-top: 0.5rem; /* reduce this */
-    gap: 2rem;
-    margin-left: 5%; /* adjust to avoid colorful-box */
-    width: 75%;
-    z-index: 1;
-    align-items: center;
-  }
+  display: flex;
+  gap: 2rem;
+  margin-left: 5%;
+  width: 75%;
+  z-index: 1;
+  align-items: flex-start; /* optional: or remove this line */
+}
+
   
   .profile-section {
     display: flex;
