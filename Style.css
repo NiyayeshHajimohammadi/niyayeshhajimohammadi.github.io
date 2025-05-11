@@ -284,3 +284,107 @@
   transition: width 1.2s ease-out;
   border-radius: 6px 0 0 6px;
 }
+@media (max-width: 768px) {
+
+  nav ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+   .about-section {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .colorful-box {
+    display: none;
+  }
+
+  .profile-img {
+    margin-top: -1em;
+    position: static;
+    width: 80%;
+    height: auto;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+
+  .about-box {
+    margin-top: -2em;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .about-box h1 {
+    margin-top: -1em;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .download-btn {
+    margin: 1rem auto 0 auto;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .about-box h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .skills-section {
+    width: 95%;
+  }
+
+  .category-label {
+    font-size: 1.2rem;
+  }
+
+  .skills-list span {
+    width: 40%;
+    font-size: 0.9rem;
+  }
+  header, footer {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+  header h1, footer h1 {
+    font-size: 1.5rem;
+  }
+
+  .skills-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .skills-section ul {
+    padding: 0;
+    text-align: center;
+  }
+
+  .skills-section li {
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+  }
+
+}
